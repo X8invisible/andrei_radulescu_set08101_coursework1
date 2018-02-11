@@ -1,0 +1,124 @@
+.navBar{
+    background-color: #f2f2f2;
+    position: fixed;
+    margin-left: -8px;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 8px 5px 0px rgba(0,0,0,0.2);
+}
+
+.navBar a{
+  float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navBar a:hover, .dropdown:hover .btnDrop{
+    background-color: #B3E5FC;
+}
+.navBar a.active{
+    background-color: #0288D1;
+    color: white;
+}
+.dropdown{
+  float:left;
+  overflow: hidden;
+}
+.dropdown .btnDrop{
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  margin: 0;
+}
+.dropdownCiphers {
+  display: none;
+  position: absolute;
+  background-color: #f2f2f2;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdownCiphers a{
+  float:none;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown:hover .dropdownCiphers{
+  display: block;
+}
+
+body{
+    background-color: #FAFAFA;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+}
+h1{
+  text-align: center;
+}
+button{
+    font-size: inherit;
+    font-family: inherit;
+}
+textarea{
+  font-size: inherit;
+  font-family: inherit;
+}
+select{
+  font-size: inherit;
+  font-family: inherit;
+}
+input{
+  font-size: inherit;
+  font-family: inherit;
+}
+p{
+  text-align:justify;
+}
+#rotSelect{
+	width: auto;
+}
+.parallaxPic{
+  background-image: url("../media/stairs.jpg");
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.elements{
+	margin: auto;
+	width: 50%;
+	border: 2px solid #2f2f2f;
+	text-align: center;
+}
+.txtDecoded{
+	padding: 12px;
+}
+.txtKey{
+	padding-left: 12px;
+	padding-right: 12px;
+}
+.comboRot{
+	padding-left: 12px;
+	padding-right: 12px;
+}
+.buttons{
+	padding: 12px;
+}
+.txtEncoded{
+	padding: 12px;
+	padding-top: 0px;
+  font-family: inherit;
+}
+.lblEncoded{
+  padding-bottom: 12px;
+}
+.lblDecoded{
+  padding-top: 12px;
+}
