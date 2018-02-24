@@ -1,0 +1,75 @@
+<html>
+<head>
+    <link rel="stylesheet" href="../css/styles.css" type="text/css" />
+    <script src="../js/scripts.js"></script>
+    <title>Caesar Cipher</title>
+</head>
+<body>
+    <div style="background-image: url('../media/cd2.jpg');height: 100%;" class="body parallaxImage">
+      <div class="navBar">
+          <a href="../index.html">Home</a>
+          <div class="dropdown">
+            <button class="btnDrop">Ciphers</button>
+            <div class="dropdownCiphers" >
+              <a href="#" class="active">Caesar</a>
+              <a href="../vigenere/index.html">Vigenere</a>
+				<a href="../hill/index.html">Hill</a>
+            </div>
+          </div>
+          <a href="../design.html">Design</a>
+      </div>
+		<div class="titles">	
+			<h2 id="ciphTitle">Caesar Cipher</h2>
+		</div>
+		<div class="elements">
+			<div class="CiphTexts">
+				<p style="text-align: center;">Instructions for using the cipher : Type the text you want to encode and choose the shift ammount for encoding</p>
+			</div>
+      <div class="lblDecoded"><label>Input text :</label></div>
+			<div class="txtInput">
+				<textarea rows="4" cols="50" id="input"></textarea>
+			</div>
+			<div class="comboRot">
+				<select id="rotSelect">
+				<option>Rot0 - Plain Text</option>
+				<option>Rot1</option>
+				<option>Rot2</option>
+				<option>Rot3</option>
+				<option>Rot4</option>
+				<option>Rot5</option>
+				<option>Rot6</option>
+				<option>Rot7</option>
+				<option>Rot8</option>
+				<option>Rot9</option>
+				<option>Rot10</option>
+				<option>Rot11</option>
+				<option>Rot12</option>
+				<option>Rot13</option>
+				<option>Rot24</option>
+				<option>Rot15</option>
+				<option>Rot16</option>
+				<option>Rot17</option>
+				<option>Rot18</option>
+				<option>Rot19</option>
+				<option>Rot20</option>
+				<option>Rot21</option>
+				<option>Rot22</option>
+				<option>Rot23</option>
+				<option>Rot24</option>
+				<option>Rot25</option>
+			</select>
+			</div>
+			<div class="buttons">
+				<button class = "btn" onclick="document.getElementById('output').innerHTML = Caesar(document.getElementById('input').value, document.getElementById('rotSelect').selectedIndex);">Encode</button>
+				<button class = "btn" onclick="document.getElementById('output').innerHTML = Caesar(document.getElementById('input').value, document.getElementById('rotSelect').selectedIndex *(-1)+26);">Decode</button>
+			</div>
+      <div class="lblEncoded"><label>Output text :</label></div>
+			<div class="txtOutput">
+				<p id="output"></p>
+			</div>
+
+		</div>
+	</div>
+
+</body>
+</html>

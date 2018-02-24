@@ -1,0 +1,50 @@
+<html>
+<head>
+    <link rel="stylesheet" href="../css/styles.css" type="text/css" />
+    <script src="../js/scripts.js"></script>
+    <title>Hill Cipher</title>
+</head>
+<body>
+    <div style="background-image: url('../media/cd2.jpg');height: 100%;" class="body parallaxImage">
+      <div class="navBar">
+          <a href="../index.html">Home</a>
+          <div class="dropdown">
+            <button class="btnDrop" onm>Ciphers</button>
+            <div class="dropdownCiphers" >
+              <a href="../caesar/index.html">Caesar</a>
+              <a href="../vigenere/index.html">Vigenere</a>
+			  <a href="#" class="active">Hill</a>
+            </div>
+          </div>
+          <a href="../design.html">Design</a>
+      </div>
+		<div class="titles">	
+			<h2 id ="ciphTitle">Hill Cipher</h2>
+		</div>
+		<div class="elements">
+			<div class="CiphTexts">
+				<p style="text-align: center;">Instructions for using the cipher: Type the text you want to encode and a key of your choice that will be used for encoding.</p>
+				<p style="text-align: center; padding-top: 2px;">NOTE: Compared to Vigenere, the Hill cipher uses matrices, meaning not all keys can be compatible with decrypting</p>
+			</div>
+      <div class="lblDecoded"><label>Input text :</label></div>
+			<div class="txtInput">
+			<textarea rows="4" cols="50" id="input"></textarea>
+			</div>
+		<div class="txtKey">
+			<label>Key: </label>
+			<input type="text" id="key"><br>
+		</div>
+		<div class="buttons">
+			<button class="btn" onclick="document.getElementById('output').innerHTML = Hill(document.getElementById('input').value,document.getElementById('key').value, false)">Encode</button>
+			<button class="btn" onclick="document.getElementById('output').innerHTML = Hill(document.getElementById('input').value,document.getElementById('key').value, true)">Decode</button>
+		</div>
+    <div class="lblEncoded"><label>Output text:</label></div>
+		<div class="txtOutput">
+			<p id="output"></p>
+		</div>
+		</div>
+	</div>
+
+</body>
+
+</html>

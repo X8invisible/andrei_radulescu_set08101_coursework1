@@ -1,69 +1,63 @@
+<html>
 <head>
     <link rel="stylesheet" href="css/styles.css" type="text/css" />
     <title>Welcome - Ciphers</title>
 </head>
 <body>
   <div class="body">
+	  <div style="background-image: url('media/kb.jpg');  height: 450px;" class="parallaxImage"></div>
     <div class="navBar">
-        <a href="index.html" class="active">Home</a>
+        <a href="#" class="active">Home</a>
         <div class="dropdown">
-          <button class="btnDrop" onm>Ciphers</button>
+          <button class="btnDrop">Ciphers</button>
           <div class="dropdownCiphers">
-            <a href="caesar.html">Caesar</a>
-            <a href="vigenere.html">Vigenere</a>
+            <a href="caesar/index.html">Caesar</a>
+            <a href="vigenere/index.html">Vigenere</a>
+			<a href="hill/index.html">Hill</a>
           </div>
         </div>
-        <a href="history.html">History</a>
-        <a href="about.html">About</a>
+        <a href="design.html">Design</a>
     </div>
-    <div class="parallaxPic"></div>
+	  <br>
+		<br>
     <div class="texts">
-      <h1>Ciphers for dayyyys</h1>
+      <h1>A history of Cryptography</h1>
+		<h2>The beginnings</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-         Quisque suscipit orci rhoncus condimentum gravida.
-         Cras lacinia massa ut urna lobortis luctus. Sed tempus tempor mi bibendum bibendum.
-         Nulla condimentum magna eget lectus luctus, a ullamcorper risus consectetur.
-         Integer rhoncus vestibulum elit, eu tincidunt ex imperdiet non.
-         Aliquam finibus velit ac malesuada ornare. Maecenas ut blandit odio.
-         Donec sed ullamcorper turpis, vel vestibulum mauris. Curabitur in ullamcorper ligula.
-          Suspendisse venenatis vestibulum magna et sodales. Quisque sollicitudin sapien mauris,
-          sit amet fringilla velit molestie ullamcorper. Nulla id eros finibus, consectetur diam eu,
-           luctus ligula. Etiam sit amet maximus justo. In blandit lectus at dui aliquet fringilla.
-           Duis eget semper lacus. Proin id placerat risus, at efficitur nulla.
+      Cryptography, the use of codes and ciphers to protect secrets, began thousands of years ago and has been considered to be born along with the art of writing. As civilizations evolved, human beings got organized in tribes, groups, and kingdoms. This led to the emergence of ideas such as power, battles, supremacy, and politics. These ideas created the need of strategical advantages, requiring the need of secrecy for transmitting messages which has ensured the permanent evolution of cryptography. The roots of cryptography are found in Roman and Egyptian civilizations.
       </p>
       <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-             Quisque suscipit orci rhoncus condimentum gravida.
-             Cras lacinia massa ut urna lobortis luctus. Sed tempus tempor mi bibendum bibendum.
-             Nulla condimentum magna eget lectus luctus, a ullamcorper risus consectetur.
-             Integer rhoncus vestibulum elit, eu tincidunt ex imperdiet non.
-             Aliquam finibus velit ac malesuada ornare. Maecenas ut blandit odio.
-             Donec sed ullamcorper turpis, vel vestibulum mauris. Curabitur in ullamcorper ligula.
-              Suspendisse venenatis vestibulum magna et sodales. Quisque sollicitudin sapien mauris,
-              sit amet fringilla velit molestie ullamcorper. Nulla id eros finibus, consectetur diam eu,
-               luctus ligula. Etiam sit amet maximus justo. In blandit lectus at dui aliquet fringilla.
-               Duis eget semper lacus. Proin id placerat risus, at efficitur nulla.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-             Quisque suscipit orci rhoncus condimentum gravida.
-             Cras lacinia massa ut urna lobortis luctus. Sed tempus tempor mi bibendum bibendum.
-             Nulla condimentum magna eget lectus luctus, a ullamcorper risus consectetur.
-             Integer rhoncus vestibulum elit, eu tincidunt ex imperdiet non.
-             Aliquam finibus velit ac malesuada ornare. Maecenas ut blandit odio.
-             Donec sed ullamcorper turpis, vel vestibulum mauris. Curabitur in ullamcorper ligula.
-              Suspendisse venenatis vestibulum magna et sodales. Quisque sollicitudin sapien mauris,
-              sit amet fringilla velit molestie ullamcorper. Nulla id eros finibus, consectetur diam eu,
-               luctus ligula. Etiam sit amet maximus justo. In blandit lectus at dui aliquet fringilla.
-               Duis eget semper lacus. Proin id placerat risus, at efficitur nulla.
-          </p>
+        The first known evidence of cryptography can be traced to the use of ‘hieroglyphs’. Hieroglyphs were essentially a mystery because very few people actually knew how to read them, making it a powerful weapon in the hands of kings and their scribes for transmitting crucial information between settlements without the repercussions of people finding out.
+      </p>
       <p>
-        Nunc molestie feugiat consectetur. Etiam rutrum vestibulum quam, ac tristique ex porttitor a.
-         Maecenas aliquet in est a imperdiet. Curabitur bibendum id mauris vitae convallis.
-         Ut feugiat scelerisque magna a aliquet. Vivamus eu dapibus diam, ut malesuada est.
-        Donec vulputate nibh augue, quis condimentum justo volutpat id. Quisque sed tincidunt enim.
+        Later, the scholars moved on to using simple monoalphabetic substitution ciphers during 500 to 600 BC. This involved replacing the alphabet of messages with other alphabets that use a secret rule. This rule became a key to retrieve the message back from the garbled message. The ancient Greeks used cyphers like these, such as the <a class = "link" href="https://en.wikipedia.org/wiki/Scytale">Scytale</a> cipher, used by the Spartans.
       </p>
     </div>
+      <div style="background-image: url('media/kb2.jpg');" class="parallaxImage"></div>
+    <div class="texts">
+		<h2>Caesar Cipher</h2>
+      <p>
+    	The earlier Roman method of cryptography, popularly known as the Caesar Shift Cipher, relies on shifting the letters of a message by an agreed number (three was a common choice), the recipient of this message would then shift the letters back by the same number and obtain the original message.
+      </p>
+		<a href="caesar/index.html" class="tryButton">Try Caesar</a>
+		<h2>Evolution of Cryptography</h2>
+		<p>
+			The invention of the frequency-analysis technique for breaking monoalphabetic substitution ciphers by Al-Kindi, a Arab mathematician around 800 AD became the biggest leap in the evolution of ciphers until World War 2. That made most ciphers vulnerable to the frequency analysis technique until the invention of the polyalphabetic cipher.
+			During and after the European Renaissance, various Italian and Papal states led the rapid proliferation of cryptographic techniques.
+		</p>
+		<p>Improved coding techniques such as <b>Vigenere Coding</b> came into existence in the 15th century. This type of cipher is a polyalphabetic cipher, which offered moving letters in the message with a number of variable places instead of moving them the same number of places.</p>
+		<a href="vigenere/index.html" class="tryButton">Try Vigenere</a>
+		<p>The Hill cipher, invented in 1929 by Lester S. Hill was the first practical polygraphic cipher and uses matrix algebra to encrypt blocks of text. Although it was difficult to perform by hand for large texts, the cipher has been implemented in machines or computers, making it one of the last classic ciphers that broke the barrier into modern ciphers</p>
+		<a href="hill/index.html" class="tryButton">Try Hill</a>
+    </div>
+	  <div style="background-image: url('media/cd4.jpg');" class="parallaxImage"></div>
+	  <div class="texts">
+		  <h2>Modern Cryptography</h2>
+			<p>Modern cryptography is achieved by using algorithms that have a key for encrypting and decrypting. By using longer keys the data becomes harder and harder to crack through brute force as the attacker would have to try every possible combination. During the 1990s along with the spread of Internet and online transactions, the need for encrypting the data being sent became a must. The first standardised format was <a class="link" href="https://en.wikipedia.org/wiki/Data_Encryption_Standard">DES</a> (Data Encryption Standard). This has been succeeded by 
+			  <a class="link" href="https://en.wikipedia.org/wiki/Advanced_Encryption_Standard">AES</a> (Advanced Encryption Standard), which is used to this day.
+			</p>
+	  </div>
+	  <p class="footer">Made By Andrei Radulescu for Web Tech</p>
   </div>
 </body>
+</html>

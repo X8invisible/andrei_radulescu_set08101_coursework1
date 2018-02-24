@@ -1,0 +1,73 @@
+<html>
+<head>
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <title>Design</title>
+</head>
+<body>
+  <div class="body" style="margin-bottom: 50px;">
+	  <div style="background-image: url('media/kb.jpg');  height: 450px;" class="parallaxImage"></div>
+    <div class="navBar">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+          <button class="btnDrop">Ciphers</button>
+          <div class="dropdownCiphers">
+            <a href="caesar/index.html">Caesar</a>
+            <a href="vigenere/index.html">Vigenere</a>
+			<a href="hill/index.html">Hill</a>
+          </div>
+        </div>
+        <a href="#" class="active">Design</a>
+    </div>
+	  <br>
+		<br>
+    <div class="texts">
+      <h1>Cryptography website design page</h1>
+		<h2>Paragraph title</h2>
+      <p>
+      This is the design page of the that showcases the various styles and designes used throughtout
+      </p>
+      <p>
+        The paragraph above as well as the one below are positioned in a div class, in order to showcase the two parallax images above and below, filler text(lorem ipsum) is inserted so that the page is long enough for the user to see the effect.
+      </p>
+      <p>
+		
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id semper nisi. Nulla porta semper egestas. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec faucibus turpis eu ante efficitur, quis aliquet odio cursus. Duis quis massa sed odio feugiat varius. Integer eget lacus felis. Aenean egestas odio vitae rutrum aliquet. Nam sollicitudin egestas ex, sit amet faucibus quam fringilla vel. Mauris lacus orci, varius quis convallis nec, lobortis ut tellus. Morbi euismod dui ex, id suscipit augue elementum tempus. Vestibulum a dolor diam. Duis pulvinar ultrices tellus vel convallis. Donec felis magna, mollis at sapien vitae, mollis semper felis. Donec efficitur nulla in tempus feugiat. Ut eu enim sed massa facilisis mattis quis ac quam. Donec eu elementum ante, at placerat odio.
+      </p>
+    </div>
+      <div style="background-image: url('media/kb2.jpg');" class="parallaxImage"></div>
+    <div class="texts">
+		<h2>Buttons</h2>
+      <p>
+    	Below are buttons that will send the user to the various cipher pages
+      </p>
+		<a href="caesar/index.html" class="tryButton">Caesar Page</a>
+		<br>
+		<a href="vigenere/index.html" class="tryButton">Try Vigenere</a>
+		<br>
+		<a href="hill/index.html" class="tryButton">Try Hill</a>
+    </div>
+	  <div style="background-image: url('media/cd4.jpg');" class="parallaxImage"></div>
+	  <div class="elements">
+			<div class="CiphTexts">
+				<p style="text-align: center;">A cipher element that includes an input text field, a key field, encode/decode buttons and an output</p>
+			</div>
+      <div class="lblDecoded"><label>Input text :</label></div>
+			<div class="txtInput">
+			<textarea rows="4" cols="50" id="input"></textarea>
+			</div>
+		<div class="txtKey">
+			<label>Key : </label>
+			<input type="text" id="key"><br>
+		</div>
+		<div class="buttons">
+			<button class="btn" onclick="document.getElementById('output').innerHTML = 'ecode message';">Encode</button>
+			<button class="btn" onclick="document.getElementById('output').innerHTML = 'decode message'">Decode</button>
+		</div>
+    <div class="lblEncoded"><label>Output text :</label></div>
+		<div class="txtOutput">
+			<p id="output"></p>
+		</div>
+		</div>
+  </div>
+</body>
+</html>
